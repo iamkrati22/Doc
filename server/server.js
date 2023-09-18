@@ -16,7 +16,7 @@ mongoose.connect(`mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@clus
 const io = require('socket.io')(server, {
     cors: {
         // origin: 'http://localhost:3000',
-        origin: 'kdocs-5ns3h5gvr-iamkrati22.vercel.app',
+        origin: 'https://kdocs.vercel.app/',
         methods: ['GET', 'POST'],
     },
 })
