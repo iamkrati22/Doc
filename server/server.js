@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
    console.log(`server start at port ${process.env.PORT}`);
   });
 
-mongoose.connect(`mongodb+srv://iamkrati22:Krati220502@cluster0.gaoifgl.mongodb.net/?retryWrites=true&w=majority`);
+mongoose.connect(`mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@cluster0.gaoifgl.mongodb.net/?retryWrites=true&w=majority`);
 
 const io = require('socket.io')(server, {
     cors: {
